@@ -1,3 +1,7 @@
 #ap_background{
     -fx-background-image:url("../drawable/background.jpg");
 }
+
+#office-hours-pane > *:hover {
+    -fx-background-color: #FFFF00;
+}
