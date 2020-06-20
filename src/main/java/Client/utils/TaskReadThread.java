@@ -15,7 +15,8 @@ import java.util.Scanner;
 
 public class TaskReadThread implements Runnable {
     //static variables
-    public static String res;
+    public static Map<String, Object>  papan;
+    public static Map<String, Object>  message;
 
     //private variables
     private MainMenu client;
@@ -32,7 +33,7 @@ public class TaskReadThread implements Runnable {
         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         Scanner scanner = new Scanner(System.in);
-        res = in.readLine(); //Disini bakal nerima send nickname
+        String res = in.readLine(); //Disini bakal nerima send nickname
         System.out.print(res);
         System.out.println(nickname);
         String test = nickname; //Ini inputin nickname
@@ -47,6 +48,17 @@ public class TaskReadThread implements Runnable {
                     res, new TypeToken<HashMap<String, String>>() {
                     }.getType() //ini convert dari json ke bentuk hashmap
             );
+
+            if (has.get("status").equals("papan")){
+                papan = has;
+            } else {
+                message = has;
+            }
+
+//            System.out.print("\nHas: \n"+has);
+//            System.out.println("\nRes: \n"+res);
+//            System.out.println("=======");
+
             if (has.get("status").equals("play")) { //Kalo status play dia inputin naruh atau perpindahannya
                 System.out.println("Put: ");
                 String send = scanner.nextLine();

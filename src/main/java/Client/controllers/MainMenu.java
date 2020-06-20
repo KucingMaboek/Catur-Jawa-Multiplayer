@@ -34,16 +34,13 @@ public class MainMenu {
             tf_nickname.setEditable(false);
             Image image = new Image(getClass().getResourceAsStream("../../drawable/loadinganim.gif"));
             img_loadingAnimation.setImage(image);
-            task = new TaskReadThread(this, tf_nickname.getText());
+            TaskReadThread task = new TaskReadThread(this, tf_nickname.getText());
             Thread thread = new Thread(task);
             thread.start();
             this.event = event;
             matchmakingStart();
         }
     }
-
-    private TaskReadThread task;
-
 
     private TimerTask timerTask = new TimerTask() {
         @Override
@@ -76,7 +73,7 @@ public class MainMenu {
         }
         txt_status.setText("Nggoleki masalah" + temp);
 
-        return !task.res.equals("waiting");
+        return !TaskReadThread.message.get("status").equals("waiting");
     }
 
     private void matchmakingStart() {

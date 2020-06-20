@@ -9,7 +9,7 @@ public class Ubin {
         return gaco;
     }
 
-    public void setGaco(Gaco gaco) {
+    public void setGaco(Gaco gaco)   {
         this.gaco = gaco;
     }
 
