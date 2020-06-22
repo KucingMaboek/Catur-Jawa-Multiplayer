@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Text?>
 <AnchorPane id="ap_background" prefHeight="480.0" prefWidth="480.0" stylesheets="@../styling/style.css"
             xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="Client.controllers.MainMenu">
+            fx:controller="Client.controllers.MainMenuController">
     <children>
         <AnchorPane layoutX="140.0" layoutY="115.0" prefHeight="250.0" prefWidth="200.0"
                     style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5, 0.5, 1, 1); -fx-background-color: #eceff1;">

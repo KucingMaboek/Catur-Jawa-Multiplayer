@@ -21,7 +21,17 @@ public class Papan {
         }
     }
 
-
+    public String[][] getClearBoard(){
+        String[][] strings = new String[3][3];
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 3; j++) {
+                if (ubins[i][j].getGaco() != null)
+                    strings[i][j] = ubins[i][j].getGaco().getPlayer().name();
+                else strings[i][j] = null;
+            }
+        }
+        return strings;
+    }
 
 
 

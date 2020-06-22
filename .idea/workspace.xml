@@ -4,29 +4,32 @@
     <list default="true" id="4b15e688-2984-4565-94f9-1e09193bf74e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Client/controllers/GamePlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Client/controllers/GamePlay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Client/controllers/MainMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Client/controllers/MainMenu$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Client/controllers/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Client/controllers/MainMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Client/controllers/GamePlay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Client/controllers/MainMenu$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Client/controllers/MainMenu.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Client/utils/TaskReadThread$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Client/utils/TaskReadThread$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Client/utils/TaskReadThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Client/utils/TaskReadThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controllers/GamePlay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controllers/MainMenu$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controllers/MainMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/utils/Helper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/utils/TaskReadThread$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/utils/TaskReadThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Client/controllers/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/controllers/GamePlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Client/controllers/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/controllers/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Server/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Server/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Server/Papan.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Server/Papan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Server/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Server/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/drawable/Ellipsis-1.6s-200px.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/views/gameplay.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/views/gameplay.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/views/mainmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/views/mainmenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client/controllers/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/controllers/GamePlayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client/controllers/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/controllers/MainMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Client/utils/TaskReadThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/utils/TaskReadThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Server/Ubin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server/Ubin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Server/Papan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server/Papan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Server/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/drawable/Ellipsis-1.6s-200px.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/gameplay.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/gameplay.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/mainmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/mainmenu.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +59,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChatClient2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -157,7 +160,14 @@
       <workItem from="1592538144269" duration="11391000" />
       <workItem from="1592570116705" duration="1523000" />
       <workItem from="1592629405326" duration="247000" />
-      <workItem from="1592629707909" duration="1430000" />
+      <workItem from="1592629707909" duration="3391000" />
+      <workItem from="1592671145758" duration="1414000" />
+      <workItem from="1592724820742" duration="3306000" />
+      <workItem from="1592743554241" duration="3560000" />
+      <workItem from="1592762125547" duration="4130000" />
+      <workItem from="1592789356254" duration="7742000" />
+      <workItem from="1592830862660" duration="17367000" />
+      <workItem from="1592856107412" duration="109000" />
     </task>
     <servers />
   </component>

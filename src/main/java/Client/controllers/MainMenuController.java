@@ -14,7 +14,7 @@ import javafx.scene.text.Text;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class MainMenu {
+public class MainMenuController {
 
     @FXML
     private TextField tf_nickname;
@@ -25,6 +25,8 @@ public class MainMenu {
     @FXML
     private ImageView img_loadingAnimation;
 
+    public static TaskReadThread task;
+
     @FXML
     void btn_play(ActionEvent event) {
         if (tf_nickname.getText().isEmpty()) {
@@ -34,7 +36,7 @@ public class MainMenu {
             tf_nickname.setEditable(false);
             Image image = new Image(getClass().getResourceAsStream("../../drawable/loadinganim.gif"));
             img_loadingAnimation.setImage(image);
-            TaskReadThread task = new TaskReadThread(this, tf_nickname.getText());
+            task = new TaskReadThread(this, tf_nickname.getText());
             Thread thread = new Thread(task);
             thread.start();
             this.event = event;
@@ -72,8 +74,7 @@ public class MainMenu {
             loadCounter++;
         }
         txt_status.setText("Nggoleki masalah" + temp);
-
-        return !TaskReadThread.message.get("status").equals("waiting");
+        return !task.message.get("status").equals("waiting");
     }
 
     private void matchmakingStart() {
@@ -84,6 +85,8 @@ public class MainMenu {
     private void matchmakingStop(Event event) {
         timerTask.cancel();
         timer.cancel();
+
+        //ganti page ke gameplay
         Helper.changePage(event, "gameplay");
     }
 }

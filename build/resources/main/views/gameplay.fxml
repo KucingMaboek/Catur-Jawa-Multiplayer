@@ -1,21 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.*?>
-<AnchorPane id="ap_background" prefHeight="480.0" prefWidth="480.0" stylesheets="@../styling/style.css"
-            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="Client.controllers.GamePlay">
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="ap_background" prefHeight="480.0" prefWidth="480.0" stylesheets="@../styling/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.controllers.GamePlayController">
     <children>
-        <AnchorPane layoutX="140.0" layoutY="115.0" prefHeight="250.0" prefWidth="200.0"
-                    style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5, 0.5, 1, 1); -fx-background-color: #eceff1;"
-                    AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0"
-                    AnchorPane.topAnchor="80.0">
-            <children>
-                <GridPane fx:id="gp_papan" gridLinesVisible="true" layoutX="14.0" layoutY="47.0"
-                          prefHeight="320.0" prefWidth="320.0"
-                          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-                          AnchorPane.topAnchor="0.0">
-                </GridPane>
-            </children>
-        </AnchorPane>
+      <AnchorPane layoutX="70.0" layoutY="27.0" prefHeight="400.0" prefWidth="481.0" style="-fx-background-color: #f2f2f2; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5, 0.5, 1, 1);" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="30.0">
+         <children>
+              <AnchorPane layoutX="20.0" layoutY="14.0" prefHeight="320.0" prefWidth="320.0" style="-fx-background-color: #eceff1;" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                  <children>
+                      <GridPane fx:id="gp_papan" hgap="2.0" layoutX="14.0" layoutY="47.0" prefHeight="320.0" prefWidth="320.0" style="-fx-background-color: #e6e6e6;" vgap="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </GridPane>
+                  </children>
+              </AnchorPane>
+            <Text fx:id="txt_status" layoutX="10.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="320.0" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="310.0">
+               <image>
+                  <Image url="@../drawable/bunder.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="310.0">
+               <image>
+                  <Image url="@../drawable/silang.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="txt_p1" layoutX="41.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player1" wrappingWidth="290.6875" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="txt_p2" layoutX="41.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player2" wrappingWidth="290.6875" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
     </children>
 </AnchorPane>

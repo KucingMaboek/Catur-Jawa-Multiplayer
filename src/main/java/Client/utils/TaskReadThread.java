@@ -1,8 +1,10 @@
 package Client.utils;
 
-import Client.controllers.MainMenu;
+import Client.controllers.GamePlayController;
+import Client.controllers.MainMenuController;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import javafx.application.Platform;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,22 +17,30 @@ import java.util.Scanner;
 
 public class TaskReadThread implements Runnable {
     //static variables
-    public static Map<String, Object>  papan;
-    public static Map<String, Object>  message;
+    public Map<String, Object> papan;
+    public Map<String, Object> message;
+    public Map<String, Object> player;
 
     //private variables
-    private MainMenu client;
+    private MainMenuController client;
+    private GamePlayController clientGame;
     private String nickname;
+    private Map<String, Object> has;
+    private PrintWriter out;
 
     //constructor
-    public TaskReadThread(MainMenu client, String nickname) {
+    public TaskReadThread(MainMenuController client, String nickname) {
         this.client = client;
         this.nickname = nickname;
     }
 
+    public void setGamePlayController(GamePlayController gamePlayController) {
+        this.clientGame = gamePlayController;
+    }
+
     private void play() throws IOException {
         Socket socket = new Socket("localhost", 3002);
-        PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+        out = new PrintWriter(socket.getOutputStream(), true);
         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         Scanner scanner = new Scanner(System.in);
         String res = in.readLine(); //Disini bakal nerima send nickname
@@ -44,31 +54,54 @@ public class TaskReadThread implements Runnable {
         while (true) {
             res = in.readLine();//Ini bakal listen ke server, apapun yg dikirim server lewat sini
             System.out.print(res);
-            Map<String, Object> has = new Gson().fromJson(
+            has = new Gson().fromJson(
                     res, new TypeToken<HashMap<String, String>>() {
                     }.getType() //ini convert dari json ke bentuk hashmap
             );
 
-            if (has.get("status").equals("papan")){
+            if (has.get("status").equals("papan")) {
                 papan = has;
+            } else if (has.get("status").equals("nickname")) {
+                player = has;
             } else {
                 message = has;
             }
 
-//            System.out.print("\nHas: \n"+has);
-//            System.out.println("\nRes: \n"+res);
-//            System.out.println("=======");
-
             if (has.get("status").equals("play")) { //Kalo status play dia inputin naruh atau perpindahannya
-                System.out.println("Put: ");
-                String send = scanner.nextLine();
-                out.print(send + "\n");//Kirim perpindahan atau tempat gaconya
-                out.flush();
+                System.out.print("Put: ");
+//                String send = scanner.nextLine();
+//                out.print(send + "\n");//Kirim perpindahan atau tempat gaconya
+//                out.flush();
             } else if (has.get("status").equals("wait")) { //Kalo status wait berarti bukan giliran dia maen
                 System.out.println(has.get("message"));
             }
             //Selain itu ada status papan. Artinya dia bawa matriks bentuk papan setelah perubahan
             //Selain itu ada juga status message, dia cuma bawa pesan biasa, bisa diliat diservernya
+
+            if (clientGame != null) {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                Runnable updater = new Runnable() {
+                    @Override
+                    public void run() {
+                        clientGame.updatePane();
+                    }
+                };
+                Platform.runLater(updater);
+            }
+        }
+    }
+
+    public void inputGaco(String send) {
+        if (has.get("status").equals("play")) { //Kalo status play dia inputin naruh atau perpindahannya
+            System.out.println("Put: " + send);
+            out.print(send + "\n");//Kirim perpindahan atau tempat gaconya
+            out.flush();
+        } else if (has.get("status").equals("wait")) { //Kalo status wait berarti bukan giliran dia maen
+            System.out.println(has.get("message"));
         }
     }
 
@@ -77,7 +110,7 @@ public class TaskReadThread implements Runnable {
         try {
             play();
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println(e.getMessage());
         }
     }
 }

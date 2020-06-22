@@ -143,7 +143,7 @@ public class Room extends Thread{
         Gson gson = new Gson();
         HashMap<String,String> hashMap = new HashMap<>();
         hashMap.put("status","papan");
-        hashMap.put("papan",gson.toJson(game.getPapan().getUbins()));
+        hashMap.put("papan",gson.toJson(game.getPapan().getClearBoard()));
         getPlayer1().sendMessage(gson.toJson(hashMap));
         getPlayer2().sendMessage(gson.toJson(hashMap));
     }
