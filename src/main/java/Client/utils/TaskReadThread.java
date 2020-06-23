@@ -13,7 +13,6 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 public class TaskReadThread implements Runnable {
     //static variables
@@ -42,9 +41,8 @@ public class TaskReadThread implements Runnable {
         Socket socket = new Socket("localhost", 3002);
         out = new PrintWriter(socket.getOutputStream(), true);
         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-        Scanner scanner = new Scanner(System.in);
         String res = in.readLine(); //Disini bakal nerima send nickname
-        System.out.print(res);
+        System.out.print(res + " ");
         System.out.println(nickname);
         String test = nickname; //Ini inputin nickname
         out.print(test + "\n"); //Kirim nickname ke server
@@ -69,9 +67,6 @@ public class TaskReadThread implements Runnable {
 
             if (has.get("status").equals("play")) { //Kalo status play dia inputin naruh atau perpindahannya
                 System.out.print("Put: ");
-//                String send = scanner.nextLine();
-//                out.print(send + "\n");//Kirim perpindahan atau tempat gaconya
-//                out.flush();
             } else if (has.get("status").equals("wait")) { //Kalo status wait berarti bukan giliran dia maen
                 System.out.println(has.get("message"));
             }
@@ -84,12 +79,7 @@ public class TaskReadThread implements Runnable {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                Runnable updater = new Runnable() {
-                    @Override
-                    public void run() {
-                        clientGame.updatePane();
-                    }
-                };
+                Runnable updater = () -> clientGame.updatePane();
                 Platform.runLater(updater);
             }
         }
@@ -110,7 +100,7 @@ public class TaskReadThread implements Runnable {
         try {
             play();
         } catch (IOException e) {
-            System.err.println(e.getMessage());
+            e.printStackTrace();
         }
     }
 }

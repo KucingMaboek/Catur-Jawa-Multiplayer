@@ -30,6 +30,7 @@ public class Main {
                      newPlayer.sendMessage("waiting");
                  }else {
                      lastRoom.setPlayer2(new Player(client, Gaco.Player.DUA));
+                     lastRoom.getPlayer2().sendMessage("waiting");
                      HashMap<String,String> hashMap = new HashMap<>();
                      hashMap.put("status","nickname");
                      hashMap.put("player1",lastRoom.getPlayer1().getNickName());

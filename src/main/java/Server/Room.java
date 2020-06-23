@@ -84,10 +84,7 @@ public class Room extends Thread{
                 }
             }
             if (game.isFinished()) {
-                HashMap<String,String> dataPlayer5 = new HashMap<>();
-                dataPlayer5.put("status","message");
-                dataPlayer5.put("message","Game has finished. The Winner is Server.Player "+ game.getWinner());
-                sendAllPlayerMessage(gson.toJson(dataPlayer5));
+                sendAllPlayerMessage("Game has finished. The Winner is "+ currentPlayer.getNickName());
                 finish();
                 break;
             }
@@ -128,10 +125,7 @@ public class Room extends Thread{
                 }
             }
         }
-        HashMap<String,String> dataPlayer10 = new HashMap<>();
-        dataPlayer10.put("status","message");
-        dataPlayer10.put("message","Game has finished. The winner is "+game.getCurrentPlayer());
-        sendAllPlayerMessage(gson.toJson(dataPlayer10));
+        sendAllPlayerMessage("Game has finished. The winner is "+currentPlayer.getNickName());
         finish();
     }
 
