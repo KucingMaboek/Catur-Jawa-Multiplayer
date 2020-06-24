@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b15e688-2984-4565-94f9-1e09193bf74e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Client/controllers/GamePlayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Client/controllers/GamePlayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Client/controllers/MainMenuController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Client/controllers/MainMenuController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Client/controllers/MainMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Client/controllers/MainMenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Client/utils/TaskReadThread$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Client/utils/TaskReadThread$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Client/utils/TaskReadThread$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Client/utils/TaskReadThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Client/utils/TaskReadThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Server/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Server/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Server/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Server/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/views/mainmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/views/mainmenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Client/controllers/GamePlayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/controllers/GamePlayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Client/controllers/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/controllers/MainMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Client/utils/TaskReadThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/utils/TaskReadThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Server/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/mainmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/mainmenu.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,6 +147,8 @@
       <workItem from="1592856107412" duration="109000" />
       <workItem from="1592870875349" duration="6588000" />
       <workItem from="1592916274077" duration="14151000" />
+      <workItem from="1592982429744" duration="17000" />
+      <workItem from="1593006825971" duration="3406000" />
     </task>
     <servers />
   </component>
